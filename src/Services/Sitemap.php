@@ -228,7 +228,7 @@ class Sitemap
      *
      * @return string
      */
-    protected function get(array $except = []): string
+    public function get(array $except = []): string
     {
         array_map(function ($builder) {
             $this->processBuilder($builder);
